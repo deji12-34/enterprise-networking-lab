@@ -47,4 +47,4 @@ show vlan brief
 - [ ] Explanation of why VLANs improve segmentation
 
 ## Status
-Not started.
+In progress.
