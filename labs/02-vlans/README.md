@@ -9,6 +9,9 @@ Segment a small company network into separate departments using VLANs and verify
 - IT — VLAN 30
 
 ## Topology
+
+![Lab 2 VLAN topology](./assets/lab02-topology.svg)
+
 ```text
 PC0 ── Fa0/1 ─┐
 PC1 ── Fa0/2 ─┤  VLAN 10 — HR
@@ -41,6 +44,10 @@ Leave default gateways blank for this lab because inter-VLAN routing is not conf
 | Fa0/1–2 | 10 | HR |
 | Fa0/3–4 | 20 | SALES |
 | Fa0/5–6 | 30 | IT |
+
+## Build Guide
+
+Follow the full [`packet-tracer-build-guide.md`](./packet-tracer-build-guide.md) for the hands-on Packet Tracer steps.
 
 ## Configuration
 Use [`switch-config.txt`](./switch-config.txt) for the full Cisco 2960 configuration.
