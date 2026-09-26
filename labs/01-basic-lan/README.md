@@ -43,5 +43,8 @@ ipconfig
 - Why hosts in the same subnet can communicate directly
 - Why hosts in different subnets need a router
 
+## Troubleshooting Notes
+See [`troubleshooting.md`](./troubleshooting.md) for the deliberate subnet-mismatch fault, diagnosis process and fix.
+
 ## Status
-Not completed yet.
+Not completed yet — Packet Tracer evidence still needs to be captured before this lab is marked complete.
