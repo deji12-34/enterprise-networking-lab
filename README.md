@@ -1,39 +1,73 @@
-# Enterprise Networking Lab
+<p align="center">
+  <img src="./assets/enterprise-networking-lab-banner.svg" alt="Enterprise Networking Lab banner" width="100%" />
+</p>
 
-A hands-on portfolio project for developing practical skills in networking, infrastructure, cloud and security.
+<p align="center">
+  <strong>A hands-on portfolio for networking, infrastructure, cloud and security.</strong>
+</p>
 
-This repository is a **learning record**, not a collection of claimed completed work. Each lab starts as a plan and is marked complete only after it has been built, tested, troubleshot and documented.
+<p align="center">
+  <img alt="Status" src="https://img.shields.io/badge/status-active-22c55e?style=flat-square">
+  <img alt="Packet Tracer" src="https://img.shields.io/badge/lab-Cisco%20Packet%20Tracer-0ea5e9?style=flat-square">
+  <img alt="Focus" src="https://img.shields.io/badge/focus-networking%20%26%20security-64748b?style=flat-square">
+</p>
 
-## Career Direction
-Target path:
+---
 
-```
-IT Support
-   ↓
-NOC / Network Engineering
-   ↓
-Infrastructure / Cloud Engineering
-   ↓
-Network / Cloud Security Engineering
-```
+## About This Repository
+
+This repository documents my progression from foundational networking into infrastructure, cloud and security engineering.
+
+It is a **learning record, not a collection of claimed completed work**. A lab is only marked complete after it has been built, tested, deliberately broken, troubleshot and documented with evidence.
+
+> **Current milestone:** Lab 01 — Basic LAN Connectivity  
+> Building and validating a two-host LAN before moving into VLAN segmentation.
 
 ## Learning Roadmap
 
 | Lab | Topic | Status |
 |---|---|---|
-| 01 | Basic LAN Connectivity | In progress |
-| 02 | VLAN Segmentation | Not started |
-| 03 | Inter-VLAN Routing | Not started |
-| 04 | DHCP | Not started |
-| 05 | Access Control Lists | Not started |
-| 06 | Mini Enterprise Network | Not started |
-| 07 | Linux Infrastructure | Not started |
-| 08 | Cloud Infrastructure | Not started |
-| 09 | Security Monitoring / SOC | Not started |
+| [01](./labs/01-basic-lan/) | Basic LAN Connectivity | 🟡 In progress |
+| [02](./labs/02-vlans/) | VLAN Segmentation | ⚪ Not started |
+| [03](./labs/03-inter-vlan-routing/) | Inter-VLAN Routing | ⚪ Not started |
+| [04](./labs/04-dhcp/) | DHCP | ⚪ Not started |
+| [05](./labs/05-acls/) | Access Control Lists | ⚪ Not started |
+| [06](./labs/06-enterprise-network/) | Mini Enterprise Network | ⚪ Not started |
+| [07](./labs/07-linux-infrastructure/) | Linux Infrastructure | ⚪ Not started |
+| [08](./labs/08-cloud-infrastructure/) | Cloud Infrastructure | ⚪ Not started |
+| [09](./labs/09-security-monitoring/) | Security Monitoring / SOC | ⚪ Not started |
+
+## What Each Lab Must Prove
+
+Every completed lab should answer six questions:
+
+1. **What did I build?**
+2. **Why was it designed that way?**
+3. **How did I verify it worked?**
+4. **What did I deliberately break?**
+5. **How did I diagnose the problem?**
+6. **How did I fix it?**
+
+Real screenshots, configuration files and troubleshooting notes are added only after the corresponding work has actually been performed.
+
+## Career Direction
+
+```text
+IT Support
+    ↓
+NOC / Network Engineering
+    ↓
+Infrastructure / Cloud Engineering
+    ↓
+Network / Cloud Security Engineering
+```
 
 ## Repository Structure
 
-```
+<details>
+<summary><strong>View lab folders</strong></summary>
+
+```text
 labs/
 ├── 01-basic-lan/
 ├── 02-vlans/
@@ -46,20 +80,23 @@ labs/
 └── 09-security-monitoring/
 ```
 
-## Rules for This Portfolio
+</details>
 
-For every lab I should be able to explain:
-1. What I built.
-2. Why it was designed that way.
-3. How I verified it worked.
-4. What I deliberately broke.
-5. How I diagnosed the problem.
-6. How I fixed it.
+## Current Focus — Lab 01
 
-Screenshots and configuration files will be added only after the corresponding lab is actually completed.
+**Goal:** build two PCs connected through a switch, configure IPv4 addressing, verify communication with `ping`, deliberately create a subnet mismatch and troubleshoot the failure.
 
-## Current Focus
+**Working addressing plan:**
 
-**Lab 1 — Basic LAN Connectivity**
+| Device | IPv4 Address | Subnet Mask |
+|---|---|---|
+| PC0 | `192.168.10.10` | `255.255.255.0` |
+| PC1 | `192.168.10.20` | `255.255.255.0` |
 
-Build two PCs connected to a switch, configure IPv4 addressing, verify communication with `ping`, then deliberately create a subnet mismatch and troubleshoot the failure.
+→ [Open Lab 01](./labs/01-basic-lan/)
+
+---
+
+<p align="center">
+  <sub>Built as a practical learning portfolio — evidence first, claims second.</sub>
+</p>
