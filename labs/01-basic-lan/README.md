@@ -46,5 +46,12 @@ ipconfig
 ## Troubleshooting Notes
 See [`troubleshooting.md`](./troubleshooting.md) for the deliberate subnet-mismatch fault, diagnosis process and fix.
 
+
+## Illustrated Walkthrough
+
+> **Note:** This is a generated learning illustration showing the intended workflow. It is not proof that the Packet Tracer lab was completed. Real screenshots should be added after performing the lab.
+
+![Lab 1 illustrated walkthrough](./assets/lab1-packet-tracer-walkthrough.svg)
+
 ## Status
 Not completed yet — Packet Tracer evidence still needs to be captured before this lab is marked complete.
