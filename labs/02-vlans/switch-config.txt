@@ -1,0 +1,35 @@
+! Lab 2 — VLAN Segmentation
+! Cisco 2960 switch configuration
+
+enable
+configure terminal
+
+vlan 10
+ name HR
+exit
+
+vlan 20
+ name SALES
+exit
+
+vlan 30
+ name IT
+exit
+
+interface range fa0/1-2
+ switchport mode access
+ switchport access vlan 10
+exit
+
+interface range fa0/3-4
+ switchport mode access
+ switchport access vlan 20
+exit
+
+interface range fa0/5-6
+ switchport mode access
+ switchport access vlan 30
+exit
+
+end
+show vlan brief
