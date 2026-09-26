@@ -20,15 +20,15 @@ This repository documents my progression from foundational networking into infra
 
 It is a **learning record, not a collection of claimed completed work**. A lab is only marked complete after it has been built, tested, deliberately broken, troubleshot and documented with evidence.
 
-> **Current milestone:** Lab 01 — Basic LAN Connectivity  
-> Building and validating a two-host LAN before moving into VLAN segmentation.
+> **Current milestone:** Lab 02 — VLAN Segmentation  
+> Building departmental VLANs and validating Layer 2 isolation.
 
 ## Learning Roadmap
 
 | Lab | Topic | Status |
 |---|---|---|
 | [01](./labs/01-basic-lan/) | Basic LAN Connectivity | 🟡 In progress |
-| [02](./labs/02-vlans/) | VLAN Segmentation | ⚪ Not started |
+| [02](./labs/02-vlans/) | VLAN Segmentation | 🟡 In progress |
 | [03](./labs/03-inter-vlan-routing/) | Inter-VLAN Routing | ⚪ Not started |
 | [04](./labs/04-dhcp/) | DHCP | ⚪ Not started |
 | [05](./labs/05-acls/) | Access Control Lists | ⚪ Not started |
@@ -82,18 +82,19 @@ labs/
 
 </details>
 
-## Current Focus — Lab 01
+## Current Focus — Lab 02
 
-**Goal:** build two PCs connected through a switch, configure IPv4 addressing, verify communication with `ping`, deliberately create a subnet mismatch and troubleshoot the failure.
+**Goal:** segment a small company network into HR, Sales and IT using VLANs, verify same-VLAN connectivity, and confirm that cross-VLAN traffic is blocked until routing is introduced.
 
-**Working addressing plan:**
+**Department plan:**
 
-| Device | IPv4 Address | Subnet Mask |
+| VLAN | Department | Network |
 |---|---|---|
-| PC0 | `192.168.10.10` | `255.255.255.0` |
-| PC1 | `192.168.10.20` | `255.255.255.0` |
+| 10 | HR | `192.168.10.0/24` |
+| 20 | Sales | `192.168.20.0/24` |
+| 30 | IT | `192.168.30.0/24` |
 
-→ [Open Lab 01](./labs/01-basic-lan/)
+→ [Open Lab 02](./labs/02-vlans/)
 
 ---
 
