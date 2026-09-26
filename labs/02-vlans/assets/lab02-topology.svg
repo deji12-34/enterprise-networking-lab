@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+  <rect width="1500" height="950" fill="#f6f8fa"/>
+  <style>
+    .title{font:700 36px Arial,sans-serif;fill:#111827}
+    .sub{font:18px Arial,sans-serif;fill:#475569}
+    .label{font:700 20px Arial,sans-serif;fill:#111827}
+    .small{font:16px Arial,sans-serif;fill:#475569}
+    .pc{fill:#ffffff;stroke:#94a3b8;stroke-width:2}
+    .switch{fill:#111827;stroke:#0f172a;stroke-width:3}
+    .swtext{font:700 20px Arial,sans-serif;fill:#ffffff}
+    .hr{fill:#e0f2fe;stroke:#0284c7;stroke-width:3}
+    .sales{fill:#dcfce7;stroke:#16a34a;stroke-width:3}
+    .it{fill:#f3e8ff;stroke:#9333ea;stroke-width:3}
+    .line{stroke:#475569;stroke-width:4}
+    .port{font:15px Arial,sans-serif;fill:#334155}
+  </style>
+
+  <text x="60" y="70" class="title">Lab 02 — VLAN Segmentation Topology</text>
+  <text x="60" y="105" class="sub">One Cisco 2960 switch, six PCs, three departmental VLANs</text>
+
+  <!-- VLAN labels -->
+  <rect x="65" y="155" width="380" height="56" rx="12" class="hr"/>
+  <text x="90" y="191" class="label">VLAN 10 — HR — 192.168.10.0/24</text>
+
+  <rect x="560" y="155" width="380" height="56" rx="12" class="sales"/>
+  <text x="585" y="191" class="label">VLAN 20 — SALES — 192.168.20.0/24</text>
+
+  <rect x="1055" y="155" width="380" height="56" rx="12" class="it"/>
+  <text x="1080" y="191" class="label">VLAN 30 — IT — 192.168.30.0/24</text>
+
+  <!-- PCs row -->
+  <!-- HR -->
+  <rect x="95" y="280" width="130" height="90" rx="10" class="pc"/>
+  <text x="135" y="315" class="label">PC0</text>
+  <text x="112" y="345" class="small">192.168.10.10</text>
+
+  <rect x="285" y="280" width="130" height="90" rx="10" class="pc"/>
+  <text x="325" y="315" class="label">PC1</text>
+  <text x="302" y="345" class="small">192.168.10.20</text>
+
+  <!-- Sales -->
+  <rect x="590" y="280" width="130" height="90" rx="10" class="pc"/>
+  <text x="630" y="315" class="label">PC2</text>
+  <text x="607" y="345" class="small">192.168.20.10</text>
+
+  <rect x="780" y="280" width="130" height="90" rx="10" class="pc"/>
+  <text x="820" y="315" class="label">PC3</text>
+  <text x="797" y="345" class="small">192.168.20.20</text>
+
+  <!-- IT -->
+  <rect x="1085" y="280" width="130" height="90" rx="10" class="pc"/>
+  <text x="1125" y="315" class="label">PC4</text>
+  <text x="1102" y="345" class="small">192.168.30.10</text>
+
+  <rect x="1275" y="280" width="130" height="90" rx="10" class="pc"/>
+  <text x="1315" y="315" class="label">PC5</text>
+  <text x="1292" y="345" class="small">192.168.30.20</text>
+
+  <!-- switch -->
+  <rect x="480" y="575" width="540" height="135" rx="18" class="switch"/>
+  <text x="680" y="625" class="swtext">Switch0 — Cisco 2960</text>
+  <text x="565" y="670" class="small" fill="#cbd5e1">Access ports: Fa0/1–Fa0/6</text>
+
+  <!-- cables -->
+  <line x1="160" y1="370" x2="560" y2="575" class="line"/>
+  <text x="290" y="485" class="port">Fa0/1</text>
+
+  <line x1="350" y1="370" x2="640" y2="575" class="line"/>
+  <text x="430" y="485" class="port">Fa0/2</text>
+
+  <line x1="655" y1="370" x2="710" y2="575" class="line"/>
+  <text x="670" y="485" class="port">Fa0/3</text>
+
+  <line x1="845" y1="370" x2="790" y2="575" class="line"/>
+  <text x="795" y="485" class="port">Fa0/4</text>
+
+  <line x1="1150" y1="370" x2="865" y2="575" class="line"/>
+  <text x="985" y="485" class="port">Fa0/5</text>
+
+  <line x1="1340" y1="370" x2="945" y2="575" class="line"/>
+  <text x="1145" y="485" class="port">Fa0/6</text>
+
+  <!-- legend -->
+  <rect x="65" y="770" width="1370" height="120" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <text x="90" y="810" class="label">Expected behavior</text>
+  <text x="90" y="845" class="small">✓ Same VLAN: PC0↔PC1, PC2↔PC3, PC4↔PC5 should communicate.</text>
+  <text x="90" y="875" class="small">✗ Different VLANs should not communicate until Lab 03 adds Layer 3 routing.</text>
+</svg>
