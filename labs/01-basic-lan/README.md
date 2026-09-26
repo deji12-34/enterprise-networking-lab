@@ -36,6 +36,10 @@ ipconfig
 - [ ] Screenshot of failed ping
 - [ ] Short troubleshooting note
 
+## Evidence Folder
+
+Real Packet Tracer evidence belongs in [`evidence/`](./evidence/). The folder is already prepared with the required filenames and capture rules.
+
 ## What I Should Be Able to Explain
 - What an IP address is
 - What a subnet mask does
