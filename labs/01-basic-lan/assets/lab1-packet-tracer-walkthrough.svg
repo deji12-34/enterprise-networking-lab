@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f6f8fa"/>
+  <style>
+    .title{font:700 34px Arial,sans-serif;fill:#ffffff}
+    .h{font:700 25px Arial,sans-serif;fill:#ffffff}
+    .label{font:700 22px Arial,sans-serif;fill:#1f2328}
+    .body{font:19px Arial,sans-serif;fill:#1f2328}
+    .mono{font:18px 'Courier New',monospace;fill:#0f172a}
+    .small{font:16px Arial,sans-serif;fill:#57606a}
+    .panel{fill:#ffffff;stroke:#d0d7de;stroke-width:2}
+    .head{fill:#24292f}
+    .blue{fill:#0969da}
+    .green{fill:#1a7f37}
+    .red{fill:#cf222e}
+    .line{stroke:#24292f;stroke-width:5}
+    .link{stroke:#1a7f37;stroke-width:5}
+  </style>
+
+  <rect x="0" y="0" width="1600" height="70" fill="#24292f"/>
+  <text x="40" y="46" class="title">Lab 1 — Basic LAN Connectivity: Illustrated Packet Tracer Walkthrough</text>
+
+  <!-- Panel 1 -->
+  <rect x="25" y="95" width="750" height="270" rx="14" class="panel"/>
+  <rect x="25" y="95" width="750" height="50" rx="14" class="head"/>
+  <text x="45" y="129" class="h">1  Topology — Initial Setup</text>
+
+  <!-- PC0 -->
+  <rect x="95" y="205" width="90" height="58" rx="6" fill="#dbeafe" stroke="#0969da" stroke-width="3"/>
+  <rect x="122" y="265" width="36" height="10" fill="#0969da"/>
+  <rect x="108" y="275" width="64" height="9" rx="3" fill="#0969da"/>
+  <text x="92" y="310" class="label">PC0</text>
+  <text x="60" y="337" class="body">192.168.10.10/24</text>
+
+  <!-- switch -->
+  <rect x="330" y="215" width="140" height="52" rx="8" fill="#d1fae5" stroke="#1a7f37" stroke-width="3"/>
+  <circle cx="352" cy="241" r="5" fill="#1a7f37"/><circle cx="372" cy="241" r="5" fill="#1a7f37"/>
+  <circle cx="392" cy="241" r="5" fill="#1a7f37"/><circle cx="412" cy="241" r="5" fill="#1a7f37"/>
+  <text x="342" y="307" class="label">Switch0</text>
+  <text x="344" y="334" class="small">Cisco 2960</text>
+
+  <!-- PC1 -->
+  <rect x="615" y="205" width="90" height="58" rx="6" fill="#dbeafe" stroke="#0969da" stroke-width="3"/>
+  <rect x="642" y="265" width="36" height="10" fill="#0969da"/>
+  <rect x="628" y="275" width="64" height="9" rx="3" fill="#0969da"/>
+  <text x="612" y="310" class="label">PC1</text>
+  <text x="580" y="337" class="body">192.168.10.20/24</text>
+
+  <line x1="185" y1="238" x2="330" y2="238" class="link"/>
+  <line x1="470" y1="238" x2="615" y2="238" class="link"/>
+  <text x="230" y="223" class="small">Fa0/1</text>
+  <text x="520" y="223" class="small">Fa0/2</text>
+
+  <!-- Panel 2 -->
+  <rect x="800" y="95" width="775" height="270" rx="14" class="panel"/>
+  <rect x="800" y="95" width="775" height="50" rx="14" class="head"/>
+  <text x="820" y="129" class="h">2  Static IP Configuration</text>
+  <text x="835" y="185" class="label">PC0</text>
+  <text x="835" y="220" class="body">IP Address: 192.168.10.10</text>
+  <text x="835" y="252" class="body">Subnet Mask: 255.255.255.0</text>
+  <text x="835" y="284" class="body">Gateway: blank</text>
+  <line x1="1185" y1="165" x2="1185" y2="330" stroke="#d0d7de" stroke-width="2"/>
+  <text x="1220" y="185" class="label">PC1</text>
+  <text x="1220" y="220" class="body">IP Address: 192.168.10.20</text>
+  <text x="1220" y="252" class="body">Subnet Mask: 255.255.255.0</text>
+  <text x="1220" y="284" class="body">Gateway: blank</text>
+  <rect x="835" y="310" width="310" height="34" rx="6" fill="#ddf4ff"/>
+  <text x="855" y="334" class="small">Both hosts are in 192.168.10.0/24</text>
+
+  <!-- Panel 3 -->
+  <rect x="25" y="390" width="500" height="250" rx="14" class="panel"/>
+  <rect x="25" y="390" width="500" height="50" rx="14" class="head"/>
+  <text x="45" y="424" class="h">3  Successful Ping</text>
+  <rect x="50" y="465" width="450" height="150" rx="8" fill="#0d1117"/>
+  <text x="70" y="495" class="mono" fill="#e6edf3">C:\&gt; ping 192.168.10.20</text>
+  <text x="70" y="530" class="mono" fill="#7ee787">Reply from 192.168.10.20</text>
+  <text x="70" y="560" class="mono" fill="#7ee787">Reply from 192.168.10.20</text>
+  <text x="70" y="590" class="mono" fill="#7ee787">Sent=4 Received=4 Lost=0</text>
+
+  <!-- Panel 4 -->
+  <rect x="550" y="390" width="500" height="250" rx="14" class="panel"/>
+  <rect x="550" y="390" width="500" height="50" rx="14" class="head"/>
+  <text x="570" y="424" class="h">4  Deliberate Fault</text>
+  <text x="585" y="480" class="label">Change PC1 only:</text>
+  <text x="585" y="520" class="body">192.168.10.20/24</text>
+  <text x="780" y="520" class="body">→</text>
+  <text x="820" y="520" class="body" fill="#cf222e">192.168.20.20/24</text>
+  <rect x="585" y="555" width="405" height="48" rx="8" fill="#ffebe9"/>
+  <text x="605" y="586" class="body">PC0 and PC1 are now in different subnets.</text>
+
+  <!-- Panel 5 -->
+  <rect x="1075" y="390" width="500" height="250" rx="14" class="panel"/>
+  <rect x="1075" y="390" width="500" height="50" rx="14" class="head"/>
+  <text x="1095" y="424" class="h">5  Failed Ping</text>
+  <rect x="1100" y="465" width="450" height="150" rx="8" fill="#0d1117"/>
+  <text x="1120" y="495" class="mono" fill="#e6edf3">C:\&gt; ping 192.168.20.20</text>
+  <text x="1120" y="530" class="mono" fill="#ff7b72">Request timed out.</text>
+  <text x="1120" y="560" class="mono" fill="#ff7b72">Request timed out.</text>
+  <text x="1120" y="590" class="mono" fill="#ff7b72">100% packet loss</text>
+
+  <!-- Panel 6 -->
+  <rect x="25" y="665" width="500" height="250" rx="14" class="panel"/>
+  <rect x="25" y="665" width="500" height="50" rx="14" class="head"/>
+  <text x="45" y="699" class="h">6  Fix the Issue</text>
+  <text x="60" y="755" class="body">Restore PC1:</text>
+  <text x="60" y="800" class="label">192.168.10.20 / 255.255.255.0</text>
+  <rect x="60" y="840" width="405" height="45" rx="8" fill="#dafbe1"/>
+  <text x="80" y="870" class="body">Same subnet restored: 192.168.10.0/24</text>
+
+  <!-- Panel 7 -->
+  <rect x="550" y="665" width="500" height="250" rx="14" class="panel"/>
+  <rect x="550" y="665" width="500" height="50" rx="14" class="head"/>
+  <text x="570" y="699" class="h">7  Verify After Fix</text>
+  <rect x="575" y="745" width="450" height="145" rx="8" fill="#0d1117"/>
+  <text x="595" y="775" class="mono" fill="#e6edf3">C:\&gt; ping 192.168.10.20</text>
+  <text x="595" y="810" class="mono" fill="#7ee787">Reply from 192.168.10.20</text>
+  <text x="595" y="840" class="mono" fill="#7ee787">Reply from 192.168.10.20</text>
+  <text x="595" y="870" class="mono" fill="#7ee787">0% packet loss</text>
+
+  <!-- Panel 8 -->
+  <rect x="1075" y="665" width="500" height="250" rx="14" class="panel"/>
+  <rect x="1075" y="665" width="500" height="50" rx="14" class="head"/>
+  <text x="1095" y="699" class="h">8  Troubleshooting Lesson</text>
+  <text x="1110" y="752" class="body">• Check physical links</text>
+  <text x="1110" y="787" class="body">• Run ipconfig on both hosts</text>
+  <text x="1110" y="822" class="body">• Compare IP + subnet mask</text>
+  <text x="1110" y="857" class="body">• Different subnets require routing</text>
+  <text x="1110" y="892" class="body">• Retest after restoring configuration</text>
+
+  <rect x="25" y="940" width="1550" height="40" rx="8" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="50" y="967" class="small">Generated learning illustration — not actual Packet Tracer evidence. Real screenshots should be added after performing the lab.</text>
+</svg>
