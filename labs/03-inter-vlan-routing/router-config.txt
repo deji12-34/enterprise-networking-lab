@@ -1,0 +1,28 @@
+! Lab 3 — Router-on-a-Stick
+! R1 configuration (Cisco 1941/2911 style interface names)
+
+enable
+configure terminal
+hostname R1
+
+interface g0/0
+ no shutdown
+ exit
+
+interface g0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+ exit
+
+interface g0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+ exit
+
+interface g0/0.30
+ encapsulation dot1Q 30
+ ip address 192.168.30.1 255.255.255.0
+ exit
+
+end
+show ip interface brief
