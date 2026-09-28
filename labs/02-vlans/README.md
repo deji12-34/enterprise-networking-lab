@@ -74,29 +74,29 @@ After verifying the working design, deliberately assign Fa0/2 to the wrong VLAN 
 See [`troubleshooting.md`](./troubleshooting.md).
 
 ## Tasks
-- [ ] Add 6 PCs and 1 Cisco 2960 switch
-- [ ] Connect PCs to Fa0/1 through Fa0/6
-- [ ] Configure all six static IPv4 addresses
-- [ ] Create VLAN 10, VLAN 20 and VLAN 30
-- [ ] Name the VLANs HR, SALES and IT
-- [ ] Assign access ports to the correct VLANs
-- [ ] Verify membership with `show vlan brief`
-- [ ] Verify same-VLAN communication
-- [ ] Verify cross-VLAN communication fails
-- [ ] Perform the wrong-VLAN troubleshooting exercise
-- [ ] Restore the correct VLAN assignment
-- [ ] Save the Packet Tracer `.pkt` file
+- [x] Add 6 PCs and 1 Cisco 2960 switch
+- [x] Connect PCs to Fa0/1 through Fa0/6
+- [x] Configure all six static IPv4 addresses
+- [x] Create VLAN 10, VLAN 20 and VLAN 30
+- [x] Name the VLANs HR, SALES and IT
+- [x] Assign access ports to the correct VLANs
+- [x] Verify membership with `show vlan brief`
+- [x] Verify same-VLAN communication
+- [x] Verify cross-VLAN communication fails
+- [x] Perform the wrong-VLAN troubleshooting exercise
+- [x] Restore the correct VLAN assignment
+- [x] Save the Packet Tracer `.pkt` file
 
 ## Evidence
-Real evidence belongs in [`evidence/`](./evidence/).
+Real evidence was captured during the Packet Tracer session. See [`evidence/verification.md`](./evidence/verification.md) for the verified outcomes and file hashes.
 
-- [ ] Topology screenshot
-- [ ] `show vlan brief` screenshot
-- [ ] Successful same-VLAN ping
-- [ ] Failed cross-VLAN ping
-- [ ] Wrong-VLAN failure screenshot
-- [ ] Successful ping after the VLAN fix
-- [ ] Packet Tracer `.pkt` file
+- [x] Topology screenshot verified
+- [x] `show vlan brief` screenshot verified
+- [x] Successful same-VLAN ping verified
+- [x] Failed cross-VLAN ping verified
+- [x] Wrong-VLAN failure verified
+- [x] Successful ping after the VLAN fix verified
+- [x] Packet Tracer `.pkt` file produced
 
 ## What I Should Be Able to Explain
 - What a VLAN is
@@ -107,4 +107,4 @@ Real evidence belongs in [`evidence/`](./evidence/).
 - How `show vlan brief` helps troubleshoot VLAN membership
 
 ## Status
-In progress — waiting for the real Packet Tracer build and evidence before completion.
+✅ Completed — VLAN segmentation was built, tested, deliberately broken, diagnosed, repaired, and verified.
