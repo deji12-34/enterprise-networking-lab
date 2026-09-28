@@ -28,12 +28,12 @@ SHA-256:
 
 File size: 56,273 bytes.
 
-## Remaining Verification
+## Final Host-to-Host Verification
 
-One final host-to-host test to VLAN 20 is still pending:
+IT-PC2 successfully reached SALES-PC1 at `192.168.20.10` with 4/4 replies and 0% packet loss.
 
-```text
-IT-PC2 -> ping 192.168.20.10
-```
+Screenshot SHA-256:
 
-Once that succeeds, the lab can be marked fully complete.
+`fe220b1f6b87230b18c3bb68c3bba528a84c46a2bbcb3c73713ee0520615efa8`
+
+This completes the required inter-VLAN routing verification across HR, Sales and IT.
