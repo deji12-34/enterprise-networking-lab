@@ -1,0 +1,15 @@
+! Lab 3 — SW1 trunk configuration
+! Keep Lab 2 access-port assignments unchanged.
+
+enable
+configure terminal
+
+interface fa0/24
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
+ no shutdown
+ exit
+
+end
+show interfaces trunk
+show vlan brief
