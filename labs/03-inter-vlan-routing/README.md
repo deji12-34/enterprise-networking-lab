@@ -30,7 +30,7 @@ R1 uses subinterfaces on `G0/0`, while SW1 uses `Fa0/24` as an 802.1Q trunk.
 - [x] Configure one default gateway per VLAN
 - [x] Verify `show interfaces trunk`
 - [x] Verify `show ip interface brief`
-- [ ] Verify HR can reach Sales
+- [x] Verify cross-VLAN host communication with Sales
 - [x] Verify inter-VLAN routing between IT and HR
 - [x] Perform the incorrect-default-gateway troubleshooting exercise
 - [x] Restore the gateway and retest
@@ -48,4 +48,4 @@ Cross-VLAN pings that failed in Lab 2 should now succeed because R1 is routing b
 - Layer 2 vs Layer 3 troubleshooting
 
 ## Status
-Almost complete — trunking, router subinterfaces, inter-VLAN routing, troubleshooting, recovery, and the Packet Tracer project are verified. One final Sales host ping remains.
+✅ Completed — router-on-a-stick, 802.1Q trunking, inter-VLAN host communication, deliberate gateway failure, diagnosis, repair, and recovery were all verified.
