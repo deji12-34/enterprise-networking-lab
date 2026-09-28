@@ -20,8 +20,8 @@ This repository documents my progression from foundational networking into infra
 
 It is a **learning record, not a collection of claimed completed work**. A lab is only marked complete after it has been built, tested, deliberately broken, troubleshot and documented with evidence.
 
-> **Current milestone:** Lab 03 — Inter-VLAN Routing  
-> Adding router-on-a-stick so HR, Sales and IT can communicate across VLAN boundaries.
+> **Current milestone:** Lab 04 — DHCP  
+> Automating IPv4 addressing for the existing VLAN-based network.
 
 ## Learning Roadmap
 
@@ -29,7 +29,7 @@ It is a **learning record, not a collection of claimed completed work**. A lab i
 |---|---|---|
 | [01](./labs/01-basic-lan/) | Basic LAN Connectivity | 🟡 In progress |
 | [02](./labs/02-vlans/) | VLAN Segmentation | ✅ Completed |
-| [03](./labs/03-inter-vlan-routing/) | Inter-VLAN Routing | 🟡 In progress |
+| [03](./labs/03-inter-vlan-routing/) | Inter-VLAN Routing | ✅ Completed |
 | [04](./labs/04-dhcp/) | DHCP | ⚪ Not started |
 | [05](./labs/05-acls/) | Access Control Lists | ⚪ Not started |
 | [06](./labs/06-enterprise-network/) | Mini Enterprise Network | ⚪ Not started |
@@ -82,19 +82,19 @@ labs/
 
 </details>
 
-## Current Focus — Lab 03
+## Current Focus — Lab 04
 
-**Goal:** route traffic between VLAN 10 (HR), VLAN 20 (Sales) and VLAN 30 (IT) using an 802.1Q trunk and router subinterfaces.
+**Goal:** replace manual host addressing with DHCP while keeping the existing VLAN and inter-VLAN routing design.
 
-**Routing plan:**
+**DHCP scope plan:**
 
-| VLAN | Department | Gateway |
+| VLAN | Department | Network |
 |---|---|---|
-| 10 | HR | `192.168.10.1` |
-| 20 | Sales | `192.168.20.1` |
-| 30 | IT | `192.168.30.1` |
+| 10 | HR | `192.168.10.0/24` |
+| 20 | Sales | `192.168.20.0/24` |
+| 30 | IT | `192.168.30.0/24` |
 
-→ [Open Lab 03](./labs/03-inter-vlan-routing/)
+→ [Open Lab 04](./labs/04-dhcp/)
 
 ---
 
