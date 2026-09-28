@@ -20,8 +20,8 @@ This repository documents my progression from foundational networking into infra
 
 It is a **learning record, not a collection of claimed completed work**. A lab is only marked complete after it has been built, tested, deliberately broken, troubleshot and documented with evidence.
 
-> **Current milestone:** Lab 02 — VLAN Segmentation  
-> Building departmental VLANs and validating Layer 2 isolation.
+> **Current milestone:** Lab 03 — Inter-VLAN Routing  
+> Adding router-on-a-stick so HR, Sales and IT can communicate across VLAN boundaries.
 
 ## Learning Roadmap
 
@@ -29,7 +29,7 @@ It is a **learning record, not a collection of claimed completed work**. A lab i
 |---|---|---|
 | [01](./labs/01-basic-lan/) | Basic LAN Connectivity | 🟡 In progress |
 | [02](./labs/02-vlans/) | VLAN Segmentation | 🟡 In progress |
-| [03](./labs/03-inter-vlan-routing/) | Inter-VLAN Routing | ⚪ Not started |
+| [03](./labs/03-inter-vlan-routing/) | Inter-VLAN Routing | 🟡 In progress |
 | [04](./labs/04-dhcp/) | DHCP | ⚪ Not started |
 | [05](./labs/05-acls/) | Access Control Lists | ⚪ Not started |
 | [06](./labs/06-enterprise-network/) | Mini Enterprise Network | ⚪ Not started |
@@ -82,19 +82,19 @@ labs/
 
 </details>
 
-## Current Focus — Lab 02
+## Current Focus — Lab 03
 
-**Goal:** segment a small company network into HR, Sales and IT using VLANs, verify same-VLAN connectivity, and confirm that cross-VLAN traffic is blocked until routing is introduced.
+**Goal:** route traffic between VLAN 10 (HR), VLAN 20 (Sales) and VLAN 30 (IT) using an 802.1Q trunk and router subinterfaces.
 
-**Department plan:**
+**Routing plan:**
 
-| VLAN | Department | Network |
+| VLAN | Department | Gateway |
 |---|---|---|
-| 10 | HR | `192.168.10.0/24` |
-| 20 | Sales | `192.168.20.0/24` |
-| 30 | IT | `192.168.30.0/24` |
+| 10 | HR | `192.168.10.1` |
+| 20 | Sales | `192.168.20.1` |
+| 30 | IT | `192.168.30.1` |
 
-→ [Open Lab 02](./labs/02-vlans/)
+→ [Open Lab 03](./labs/03-inter-vlan-routing/)
 
 ---
 
