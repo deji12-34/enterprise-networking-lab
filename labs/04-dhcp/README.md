@@ -25,4 +25,4 @@ Automatically assign IP configuration to end devices instead of configuring ever
 - [ ] Failure and fix notes
 
 ## Status
-Not started.
+In progress.
