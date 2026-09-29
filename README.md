@@ -30,7 +30,7 @@ It is a **learning record, not a collection of claimed completed work**. A lab i
 | [01](./labs/01-basic-lan/) | Basic LAN Connectivity | 🟡 In progress |
 | [02](./labs/02-vlans/) | VLAN Segmentation | ✅ Completed |
 | [03](./labs/03-inter-vlan-routing/) | Inter-VLAN Routing | ✅ Completed |
-| [04](./labs/04-dhcp/) | DHCP | ⚪ Not started |
+| [04](./labs/04-dhcp/) | DHCP | 🟡 In progress |
 | [05](./labs/05-acls/) | Access Control Lists | ⚪ Not started |
 | [06](./labs/06-enterprise-network/) | Mini Enterprise Network | ⚪ Not started |
 | [07](./labs/07-linux-infrastructure/) | Linux Infrastructure | ⚪ Not started |
